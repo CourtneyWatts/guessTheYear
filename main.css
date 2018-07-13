@@ -1,0 +1,320 @@
+/* main.css*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html, body, header, section, h1, h2, h3, h4, h5, h6, p, div, li {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So, 1.6rem = 16px :) */
+html {
+    font-size: 62.5%;     
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    position: relative;
+    width:450px;
+    height:750px;
+    background-color: #9beffe;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-left:30px;
+}
+.spotlight {
+    background-color: black;
+    height:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#question{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: white;
+    text-align:center;
+    
+
+}
+
+header {
+    padding-right:30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.question-number{
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-align: center;
+    width: 49.5px;
+    margin-top: -15px;
+}
+#smaller {
+    font-size:2rem;
+    
+    transform:scale(2.2,1.4);
+}
+.smallest {
+    font-size:1.8rem;
+}
+.big {
+    position: relative;
+    top:8px;
+}
+
+.options {
+padding: 30px;
+padding-top: 40px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-bottom: 50px;
+}
+.choice {
+    border: 3px solid rgb(116, 112, 112);;
+    height:100px;
+    width: 47%;
+    border-radius: 10px;
+    margin-bottom: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice p {
+    font-size:3rem;
+    font-weight:800;
+    color: rgb(116, 112, 112);
+}
+/* 
+#choice1{
+    background-color: #55efc4;
+}
+#choice2{
+    background-color: #81ecec;
+}
+#choice3{
+    background-color: #ffeaa7;
+}
+#choice4{
+    background-color: #fab1a0;
+} */
+
+
+
+header {
+    border-bottom: 2px solid black;
+    background-color: #a29bfe;
+    height:auto;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer {
+     
+        background-color: azure;
+        height:auto;
+}
+.timer, .score, #points {
+    display: flex;
+    height:50px;
+    align-items: center;
+    justify-content: center;
+    font-size:3rem;
+    font-weight:800;
+    color: rgb(255, 255, 255);
+}
+.score {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+#points {
+    color: rgb(0, 0, 0);
+    background-color: rgb(81, 176, 240);
+
+
+}
+
+#overlay {
+position: fixed;
+display: flex;
+flex-direction: column;
+z-index: 500;
+width:446px;
+height:746px;
+background-color: #ff7675;
+padding:20px;
+
+
+}
+#heading{
+margin: 20px auto 30px;
+text-align: center;
+font-size:5rem;
+}
+
+#overlay p {
+    font-size: 2rem;
+}
+#rating, #score, #correct {
+    color:rgb(255, 0, 0);
+    background-color: #ffffff;
+    border: solid 2px white;
+    width:80%;
+    margin:0;
+}
+#rating,  {
+    text-align: center;
+}
+
+.ratingbox, .scorebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight:900;
+}
+
+
+
+.ratingbox p, .scorebox p{
+    padding:15px;
+   
+
+}
+
+p.left {
+    margin-right:0px;
+    border: solid 2px white;
+    width:120px;
+
+
+}
+
+#summary {
+    background-color:rgb(255, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    border: solid 2px white;
+    width:100%;
+    margin:0;
+    border: solid 2px white;
+    padding: 20px;
+    font-weight:400;
+    text-align: center;
+}
+
+#subject {
+    width:200px;
+    height:200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #fab1a0;
+    margin: 30px auto 0;
+}
+#subjectname {
+    border: 2px solid white;
+    color:rgb(255, 0, 0);
+    background-color: #ffffff;
+    margin:-5px auto 0;
+    padding:5px;
+    border-radius: 5px;
+    font-weight: 900;
+
+
+}
+
+#startingpage {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    width:446px;
+    height:746px;
+    background-color: #ff4d4d;
+    padding:30px;
+}
+
+.button {
+    width: 100%;
+    height: 28%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:5rem;
+    font-weight: 900;
+    color: white;
+    background-size:cover;
+    border-radius:15px;
+    }
+
+
+#musicbutton
+{background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('images/music.jpg');
+}
+
+#filmbutton
+{background-image:linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),url('images/film.jpg');
+}
+#sportsbutton
+{background-image:linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),url('images/sports.jpg');
+}
+.title h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.maintitle{
+    margin-left:0;
+}
+
+.fa{
+    margin-top:-10px;
+}
